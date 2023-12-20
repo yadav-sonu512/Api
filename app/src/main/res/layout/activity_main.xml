@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resources."
+            android:textSize="40dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JSONPlaceholder comes with a set of 6 common resources:"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText"
+                android:layout_gravity="center">
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/posts	            100 posts"
+                android:paddingLeft="15dp"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/comments	   500 comments"
+                android:paddingLeft="15dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/album"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/albums	         100 albums"
+                android:paddingLeft="15dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/photos	          5000 photos"
+                android:paddingLeft="15dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/todo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/todos	            200 todos"
+                android:paddingLeft="15dp"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/users	            10 users"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+
+                android:layout_marginTop="22dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/LinearLayout"
+    android:layout_marginTop="20dp">
+    <Button
+        android:id="@+id/postApiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Api"
+        android:textSize="20dp">
+    </Button>
+
+</LinearLayout>
+
+
+</RelativeLayout>

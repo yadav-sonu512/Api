@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context=".CommentActivity">
+
+    <LinearLayout
+        android:id="@+id/commentheading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/relativeLayout"
+        tools:ignore="NotSibling"
+        android:background="#2D62F4">
+        <ImageView
+            android:id="@+id/commentbackbutton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:text="Comment Api Data in view"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_menu_24"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/cardview"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="180dp"-->
+    <!--        android:backgroundTint="#AFA6A6"-->
+    <!--        android:layout_margin="7dp"-->
+    <!--        app:cardCornerRadius="10dp"-->
+    <!--        android:layout_below="@id/RelativeLayout"-->
+    <!--        tools:ignore="NotSibling">-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginLeft="5dp">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/userid"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="userid"-->
+    <!--            />-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/id"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="id"-->
+    <!--            android:layout_below="@id/userid"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/title"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="title"-->
+    <!--            android:layout_below="@+id/id"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/body"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="body"-->
+    <!--            android:layout_below="@id/title"/>-->
+    <!--        </RelativeLayout>-->
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/commentheading"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
